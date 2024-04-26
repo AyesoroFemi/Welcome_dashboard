@@ -7,72 +7,32 @@ import { Doughnut } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [
       {
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Total Sales',
+        data: [25, 3, 5, 12 ],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
+          '#F4B665',
+          'rgb(255,128,139)',
+          'rgb(94,129,244)',
+         ' rgb(138,241,185)',
+       
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
+            '#F4B665',
+            'rgb(255,128,139)',
+          'rgb(94,129,244)',
+          'rgb(138,241,185)',
         ],
         borderWidth: 1,
       },
     ],
   };
   
-  export const options = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        display: false, // Set to false to hide the legend (header)
-      },
-      title: {
-        display: false, // Set to false to hide the title
-      },
-    },
-    elements: {
-      line: {
-        tension: 0.4, // Adjust the tension to control the curve
-      },
-    },
-    scales: {
-      x: {
-        ticks: {
-          maxRotation: 0,
-          minRotation: 0,
-        },
-        grid: {
-          display: false, // Remove vertical gridlines
-          beginAtZero: true,
-        },
-      },
-      y: {
-        grid: {
-          display: false, // Optionally, hide horizontal gridlines
-        },
-        beginAtZero: false,
-        display: false, // Set to false to remove the main vertical axis line
-      },
-    },
-  };
-  
 function IncomeBreakdown() {
   return (
-    <div className="bg-white rounded-xl p-4 ">
+    <div className="bg-white rounded-xl p-4 h-[350px]">
       <div className="flex justify-between">
         <h1 className="font-[600]">Income Breakdown</h1>
         <div className="text-xs flex items-center gap-5">
@@ -81,13 +41,15 @@ function IncomeBreakdown() {
           </div>
           <p className="text-gray-400 font-[600]">Week</p>
           <p className="text-gray-400 font-[600]">Month</p>
-          <div className="bg-gray-200 rounded-md p-1.5">
-            <Menu />
+          <div className="bg-[#f0f0f3] rounded-md p-1.5">
+            <Menu color="#b8b8cd" />
           </div>
         </div>
       </div>
-      <div className="pt-4 h-[150px] w-full">
-          <Doughnut data={data} />
+      <div className="pt-4 flex justify-center">
+          <div className='h-[250px]' >
+            <Doughnut data={data} />
+          </div>
       </div>
     </div>
   )

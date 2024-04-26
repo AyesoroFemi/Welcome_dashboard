@@ -61,25 +61,25 @@ import {
     },
   };
   
-  const labels = ["Jan", "Feb", "Mar", "April", "May", "Jun", "Jul"];
+  const labels = ["", "$320.000", "", "$200.000", "", "$142.000", ""];
   
   export const data = {
     labels,
     datasets: [
       {
         label: "Dataset 1",
-        data: [600, 400, 300, 1500, 1200, 400, 600],
-        borderColor: "#059669",
-        backgroundColor: "#059669",
-        borderWidth: 1,
+        data: [800, 400, 300, 1500, 1200, 400, 600],
+        borderColor: "#a8f5cb",
+        backgroundColor: "#a8f5cb",
+        borderWidth: 2,
         pointRadius: 0,
       },
     ],
   };
 function IncomeDetails() {
   return (
-    <div className="bg-white rounded-xl p-4 ">
-      <div className="flex justify-between">
+    <div className="bg-white rounded-xl h-[350px] ">
+      <div className="flex justify-between p-4">
         <h1 className="font-[600]">Income Details</h1>
         <div className="text-xs flex items-center gap-5">
           <div className="text-xs border-[1px] border-gray-300 rounded-md px-3 py-2 gap-3">
@@ -87,13 +87,13 @@ function IncomeDetails() {
           </div>
           <p className="text-gray-400 font-[600]">Week</p>
           <p className="text-gray-400 font-[600]">Month</p>
-          <div className="bg-gray-200 rounded-md p-1.5">
-            <Menu />
+          <div className="bg-[#f0f0f3] rounded-md p-1.5">
+            <Menu color="#b8b8cd"/>
           </div>
         </div>
       </div>
-      <h1 className="text-2xl font-[600] mt-3">$142.000</h1>
-      <p className="text-sm text-gray-400">Total income</p>
+      <h1 className="text-2xl font-[600] mt-3 pl-4">$142.000</h1>
+      <p className="text-sm text-gray-400 pl-4">Total income</p>
       <div className="pt-10 w-full">
           <Line options={options} data={data} />
       </div>

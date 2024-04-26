@@ -6,9 +6,9 @@ import TopNav from "./TopNav"
 
 function DashboardLayout() {
   return (
-    <div className="bg-gray-100 px-6 py-4">
+    <div className="bg-[#F7F7F8] px-6 py-4 w-full">
         <TopNav />
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-6">
             <Sales/>
             <LatestEvents />
             <IncomeBreakdown/>

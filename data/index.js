@@ -27,11 +27,11 @@ export const SIDEBAR_ICONS = [
 
 
 export const LATEST_UPDATES = [
-    { id: 1, icon: <Cart />, title: "Item sale #340-00", value: "+$890.00" },
-    { id: 2, icon: <Cart />,  title: "New lead created", value: "30min" },
-    { id: 3, icon: <Cart />,  title: "Item sale #340-00", value: "+$940.00" },
-    { id: 4, icon: <Cart/>,  title: "Item upload complete", value: "45 min" },
-    { id: 5, icon: <Cart />,  title: "Email notification sent", value: "2hrs" },
+    { id: 1, icon: <Cart color="#6c8cf5" />, title: "Item sale #340-00", value: "+$890.00" },
+    { id: 2, icon: <Cart color="#6c8cf5" />,  title: "New lead created", value: "30min" },
+    { id: 3, icon: <Cart color="#6c8cf5" />,  title: "Item sale #340-00", value: "+$940.00" },
+    { id: 4, icon: <Cart color="#6c8cf5"/>,  title: "Item upload complete", value: "45 min" },
+    { id: 5, icon: <Cart color="#6c8cf5" />,  title: "Email notification sent", value: "2hrs" },
 ];
 
 
@@ -41,8 +41,8 @@ export const UPCOMING_EVENTS = [
 ];
 
 export const LATEST_EVENTS = [
-    { id: 1, icon: <Cart />, title: "Invoice #AA-04-19-1890678", description: "New Madieton LLC", value: "$118.00"},
-    { id: 2, icon: <Cart />, title: "Client Bernard Stanley", description: "bernard.stanley@gmail.com", value: "$3208.00" },
-    { id: 2, icon: <Cart />, title: "Meeting with the client", description: "24 Vandervort Springs", value: "29 Oct 2019" },
-    { id: 2, icon: <Cart />, title: "Invoice #AA-04-19-1890243", description: "Tyriquemouth LLC", value: "$578.00" },
+    { id: 1, icon: <Cart color="#6c8cf5" />, title: "Invoice #AA-04-19-1890678", description: "New Madieton LLC", value: "$118.00"},
+    { id: 2, icon: <Cart color="#6c8cf5"/>, title: "Client Bernard Stanley", description: "bernard.stanley@gmail.com", value: "$3208.00" },
+    { id: 2, icon: <Cart color="#6c8cf5"/>, title: "Meeting with the client", description: "24 Vandervort Springs", value: "29 Oct 2019" },
+    { id: 2, icon: <Cart color="#6c8cf5"/>, title: "Invoice #AA-04-19-1890243", description: "Tyriquemouth LLC", value: "$578.00" },
 ];

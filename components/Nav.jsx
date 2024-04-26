@@ -16,7 +16,7 @@ function Nav() {
         </div>
         <Sidenav />
       </div>
-      <div className="ml-8">
+      <div className="mx-6">
         <Logo/>
         <div className="">
           <p style={styles} className=" text-gray-500">
