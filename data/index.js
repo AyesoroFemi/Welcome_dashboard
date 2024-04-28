@@ -13,6 +13,14 @@ import Box from "@/components/assets/box";
 import Calculator from "@/components/assets/calculator";
 import Office from "@/components/assets/office";
 import ArrowDown from "@/components/assets/arrow-down";
+import Lead from "@/components/assets/lead";
+import Sales from "@/components/assets/sales";
+import Upload from "@/components/assets/upload";
+import Bell from "@/components/assets/bell";
+import Document from "@/components/assets/document";
+import Receipt from "@/components/assets/receipt";
+import Users from "@/components/assets/users";
+import SalesReceipt from "@/components/assets/sales-receipt";
 // 
 
 export const SIDEBAR_ICONS = [
@@ -23,23 +31,19 @@ export const SIDEBAR_ICONS = [
   { id: 5, icon: <CalendarDays />, link: "/c" },
   { id: 6, icon: <Search />, link: "/d" },
   { id: 7, icon: <Chat />, link: "/e" },
-
   { id: 8, icon: <Box />, link: "/f" },
   { id: 9, icon: < Calculator />, link: "/g" },
   { id: 10, icon: <Office />, link: "/h" },
   { id: 11, icon: <ArrowDown />, link: "/i" },
-//   { id: 6, icon: <CalendarDays />, link: "/j" },
-//   { id: 7, icon: <Search />, link: "/k" },
-//   { id: 8, icon: <Chat />, link: "/l" },
 ];
 
 
 export const LATEST_UPDATES = [
     { id: 1, icon: <Cart color="#6c8cf5" />, title: "Item sale #340-00", value: "+$890.00" },
-    { id: 2, icon: <Cart color="#6c8cf5" />,  title: "New lead created", value: "30min" },
-    { id: 3, icon: <Cart color="#6c8cf5" />,  title: "Item sale #340-00", value: "+$940.00" },
-    { id: 4, icon: <Cart color="#6c8cf5"/>,  title: "Item upload complete", value: "45 min" },
-    { id: 5, icon: <Cart color="#6c8cf5" />,  title: "Email notification sent", value: "2hrs" },
+    { id: 2, icon: <Lead color="#6c8cf5" />,  title: "New lead created", value: "30min" },
+    { id: 3, icon: <Sales color="#6c8cf5" />,  title: "Item sale #340-00", value: "+$940.00" },
+    { id: 4, icon: <Upload color="#6c8cf5"/>,  title: "Item upload complete", value: "45 min" },
+    { id: 5, icon: <Bell color="#6c8cf5" />,  title: "Email notification sent", value: "2hrs" },
 ];
 
 
@@ -49,8 +53,8 @@ export const UPCOMING_EVENTS = [
 ];
 
 export const LATEST_EVENTS = [
-    { id: 1, icon: <Cart color="#6c8cf5" />, title: "Invoice #AA-04-19-1890678", description: "New Madieton LLC", value: "$118.00"},
-    { id: 2, icon: <Cart color="#6c8cf5"/>, title: "Client Bernard Stanley", description: "bernard.stanley@gmail.com", value: "$3208.00" },
-    { id: 2, icon: <Cart color="#6c8cf5"/>, title: "Meeting with the client", description: "24 Vandervort Springs", value: "29 Oct 2019" },
-    { id: 2, icon: <Cart color="#6c8cf5"/>, title: "Invoice #AA-04-19-1890243", description: "Tyriquemouth LLC", value: "$578.00" },
+    { id: 1, icon: <Document color="#6c8cf5" />, title: "Invoice #AA-04-19-1890678", description: "New Madieton LLC", value: "$118.00"},
+    { id: 2, icon: <Receipt color="#6c8cf5"/>, title: "Client Bernard Stanley", description: "bernard.stanley@gmail.com", value: "$3208.00" },
+    { id: 2, icon: <Users color="#6c8cf5"/>, title: "Meeting with the client", description: "24 Vandervort Springs", value: "29 Oct 2019" },
+    { id: 2, icon: <SalesReceipt  color="#6c8cf5"/>, title: "Invoice #AA-04-19-1890243", description: "Tyriquemouth LLC", value: "$578.00" },
 ];

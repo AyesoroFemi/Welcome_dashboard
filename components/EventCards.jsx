@@ -13,12 +13,12 @@ function EventCards() {
                 style={{ backgroundColor: item.color }}
                 className={`bg-${item.color} w-2 h-2 rounded-full`}
               ></div>
-              <p className="text-sm"> {item.time}</p>
+              <p className="text-xs font-bold text-[#6c8cf5]"> {item.time}</p>
             </div>
             <Dots />
           </div>
-          <h1 className="font-[500] mt-1">{item.title}</h1>
-          <p>{item.description}</p>
+          <h1 className="font-[700] text-xs mt-1 mb-1">{item.title}</h1>
+          <p className="text-xs font-[600] text-gray-400">{item.description}</p>
         </div>
       ))}
     </div>

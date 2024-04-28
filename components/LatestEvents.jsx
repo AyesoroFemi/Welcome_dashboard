@@ -20,7 +20,7 @@ function LatestEvents() {
           <div key={item.id} className="my-4 text-xs flex items-center justify-between">
             <div className="flex gap-4">
               <div className="bg-[#eff3fe] flex justify-center items-center rounded-md px-3">
-                <span>{item.icon}</span>
+                <span className="text-[#6c8cf5]">{item.icon}</span>
               </div>
               <div>
                 <h1 className="font-[600] mt-1">{item.title}</h1>

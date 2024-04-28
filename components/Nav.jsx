@@ -9,14 +9,15 @@ function Nav() {
         fontSize: "18px",
     }
   return (
-    <div className="flex">
-      <div className="w-[70px] border-r-[1px] border-[#ededee] p-3 flex flex-col items-center">
-        <div className="">
+    <div className="flex h-[100vh]">
+      <div className="w-[70px] h-[100%] border-r-[1px] border-[#ededee] p-3 flex flex-col items-center">
+        <div className="text-[#6c8cf5]">
           <Bolt />
         </div>
         <Sidenav />
       </div>
-      <div className="mx-6">
+      <div className="h-[100vh] custom-scrollbar overflow-y-scroll scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-100"> 
+      <div className="mx-6 pb-4">
         <Logo/>
         <div className="">
           <p style={styles} className=" text-gray-500">
@@ -28,6 +29,7 @@ function Nav() {
         <UpdateCard />
         <h1 className="mt-7 text-sm font-[700]">Upcoming events</h1>
         <EventCards/>
+      </div>
       </div>
     </div>
   );

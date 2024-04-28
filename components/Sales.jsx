@@ -1,7 +1,5 @@
 "use client";
 
-import Menu from "./assets/menu";
-
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -13,6 +11,7 @@ import {
     Legend,
   } from "chart.js";
   import { Line } from "react-chartjs-2";
+import CalendarDays from "./assets/calendar_days";
 
   ChartJS.register(
     CategoryScale,
@@ -87,8 +86,8 @@ function Sales() {
           </div>
           <p className="text-gray-400 font-[600]">Week</p>
           <p className="text-gray-400 font-[600]">Month</p>
-          <div className="bg-[#f0f0f3] rounded-md p-1.5">
-            <Menu color="#b8b8cd" />
+          <div className="bg-[#f3f3f6] rounded-md p-1.5 text-[#878787] cursor-pointer">
+            <CalendarDays  /> 
           </div>
         </div>
       </div>

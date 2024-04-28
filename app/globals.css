@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: .5px; /* Width of vertical scrollbar */
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ededee; /* Color of the thumb */
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ededee; /* Color of the thumb on hover */
+}
+
 /* :root { */
   /* --foreground-rgb: 0, 0, 0; */
   /* --background-start-rgb: 214, 219, 220; */
