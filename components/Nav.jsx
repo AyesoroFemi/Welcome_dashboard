@@ -10,7 +10,7 @@ function Nav() {
     }
   return (
     <div className="flex">
-      <div className="w-[80px] border-r-[1px] border-gray-200 p-3 flex flex-col items-center">
+      <div className="w-[70px] border-r-[1px] border-[#ededee] p-3 flex flex-col items-center">
         <div className="">
           <Bolt />
         </div>
