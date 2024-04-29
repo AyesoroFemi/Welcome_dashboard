@@ -16,7 +16,7 @@ function Nav() {
         </div>
         <Sidenav />
       </div>
-      <div className="h-[100vh] custom-scrollbar overflow-y-scroll scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-100"> 
+      <div className=""> 
       <div className="mx-6 pb-4">
         <Logo/>
         <div className="">
