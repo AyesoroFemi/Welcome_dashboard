@@ -4,7 +4,7 @@ import Search from "./assets/search_bar";
 
 function TopNav() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between sticky top-0 px-6 py-4 bg-[#F7F7F8] z-10">
       <div className="flex items-center gap-4">
         <div className="bg-gray-200 rounded-md p-1.5 cursor-pointer">
             <Menu color="#878787" />

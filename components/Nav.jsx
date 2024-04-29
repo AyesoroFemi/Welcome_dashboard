@@ -9,7 +9,7 @@ function Nav() {
         fontSize: "18px",
     }
   return (
-    <div className="flex h-[100vh]">
+    <div className="flex h-[100vh] overflow-auto">
       <div className="w-[70px] h-[100%] border-r-[1px] border-[#ededee] p-3 flex flex-col items-center">
         <div className="text-[#6c8cf5]">
           <Bolt />
