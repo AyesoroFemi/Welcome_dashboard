@@ -7,7 +7,7 @@
   width: .5px; /* Width of vertical scrollbar */
 }
 
-/* Track */
+Track
 .custom-scrollbar::-webkit-scrollbar-track {
   background: #f1f1f1; /* Color of the track */
 }

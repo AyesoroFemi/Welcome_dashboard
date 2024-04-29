@@ -3,6 +3,7 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from "react-chartjs-2";
 import CalendarDays from './assets/calendar_days';
+import { INCOME_BREAKDOWN_DATA } from '@/data';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -32,7 +33,7 @@ export const data = {
   
 function IncomeBreakdown() {
   return (
-    <div className="bg-white rounded-xl p-4 h-[350px]">
+    <div className="bg-white rounded-xl p-4 h-[440px]">
       <div className="flex justify-between">
         <h1 className="font-[600]">Income Breakdown</h1>
         <div className="text-xs flex items-center gap-5">
@@ -46,10 +47,23 @@ function IncomeBreakdown() {
           </div>
         </div>
       </div>
-      <div className="pt-4 flex justify-center">
+      <div className="pt-4 flex justify-center my-5">
           <div className='h-[250px]' >
             <Doughnut data={data} />
           </div>
+      </div>
+      <div className='grid grid-cols-2 gap-x-12'>
+        {INCOME_BREAKDOWN_DATA.map((item) => (
+        <div className='flex items-center justify-between mt-4' key={item.id}>
+          <div className='flex items-center gap-2'>
+            <div style={{ borderColor: item.color }} className={`border-4 h-2 w-2 p-0.5 bg-white rounded-full`}></div>
+            <div className='text-xs font-[500]'>{item.title}</div>
+          </div>
+          <div className='font-bold text-xs'>{item.value}</div>
+        </div>
+
+        ))}
+
       </div>
     </div>
   )

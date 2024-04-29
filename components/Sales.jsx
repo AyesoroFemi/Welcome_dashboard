@@ -77,7 +77,7 @@ import CalendarDays from "./assets/calendar_days";
   };
 function Sales() {
   return (
-    <div className="bg-white rounded-xl mt-4 h-[350px]">
+    <div className="bg-white rounded-xl mt-4 h-[400px]">
       <div className="flex justify-between p-4">
         <h1 className="font-[600]">Your Sales</h1>
         <div className="text-xs flex items-center gap-5">
@@ -93,7 +93,7 @@ function Sales() {
       </div>
       <h1 className="text-2xl font-[600] mt-3 pl-4">$142.000</h1>
       <p className="text-sm text-gray-400 pl-4">Total income</p>
-      <div className="pt-10 w-full">
+      <div className="pt-10 h-[240px] w-full">
           <Line options={options} data={data} />
       </div>
     </div>

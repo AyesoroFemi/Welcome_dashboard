@@ -60,7 +60,7 @@ import CalendarDays from './assets/calendar_days';
     },
   };
   
-  const labels = ["", "$320.000", "", "$200.000", "", "$142.000", ""];
+  const labels = ["", "", "", "", "", "", ""];
   
   export const data = {
     labels,
@@ -77,7 +77,7 @@ import CalendarDays from './assets/calendar_days';
   };
 function IncomeDetails() {
   return (
-    <div className="bg-white rounded-xl h-[350px] ">
+    <div className="bg-white rounded-xl h-[440px] ">
       <div className="flex justify-between p-4">
         <h1 className="font-[600]">Income Details</h1>
         <div className="text-xs flex items-center gap-5">
@@ -93,8 +93,22 @@ function IncomeDetails() {
       </div>
       <h1 className="text-2xl font-[600] mt-3 pl-4">$142.000</h1>
       <p className="text-sm text-gray-400 pl-4">Total income</p>
-      <div className="pt-10 w-full">
+      <div className="pt-10  h-[240px] w-full">
           <Line options={options} data={data} />
+      </div>
+      <div className="flex justify-around">
+        <div className="border-r-[1px] border-[bg-gray-50] h-full w-full flex flex-col items-center justify-center">
+          <h1 className="font-[600]">$342.000</h1>
+          <p className="text-sm text-gray-400">Total sales</p>
+        </div>
+        <div  className="border-r-[1px] border-[bg-gray-50] h-full w-full flex flex-col items-center justify-center">
+          <h1 className="font-[600]">$200.000</h1>
+          <p className="text-sm text-gray-400">Spending</p>
+        </div>
+        <div className=" h-full w-full flex flex-col items-center justify-center">
+          <h1 className="font-[600]">$142.000</h1>
+          <p className="text-sm text-gray-400">Income</p>
+        </div>
       </div>
     </div>
   )

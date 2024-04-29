@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 function Sidenav() {
   const path = usePathname()
   return (
-   <div className="flex flex-col justify-between  h-[100%] max-h-max overflow-y-scroll">
+   <div className="flex flex-col justify-between  h-[100%] overflow-y-scroll">
      <div className="px-3">
         {SIDEBAR_ICONS.map((item) => (
             <div key={item.id} className={`flex items-center px-[13px] ml-1 my-4 ${path === item.link ? "text-[#6c8cf5] border-r-2 border-[#6c8cf5]" : "text-[#a9a9c2]"}`}>

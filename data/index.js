@@ -26,13 +26,13 @@ import SalesReceipt from "@/components/assets/sales-receipt";
 export const SIDEBAR_ICONS = [
   { id: 1, icon: <Time />,  link: "/" },
   { id: 2, icon: <BrifeCase />, link: "/price" },
-  { id: 3, icon: <Calender />, link: "/a" },
-  { id: 4, icon: <File />, link: "/b" },
-  { id: 5, icon: <CalendarDays />, link: "/c" },
-  { id: 6, icon: <Search />, link: "/d" },
-  { id: 7, icon: <Chat />, link: "/e" },
-  { id: 8, icon: <Box />, link: "/f" },
-  { id: 9, icon: < Calculator />, link: "/g" },
+  { id: 3, icon: <Calender />, link: "/#a" },
+  { id: 4, icon: <File />, link: "/#b" },
+  { id: 5, icon: <CalendarDays />, link: "/#c" },
+  { id: 6, icon: <Search />, link: "/#d" },
+  { id: 7, icon: <Chat />, link: "/#e" },
+  { id: 8, icon: <Box />, link: "/#f" },
+  { id: 9, icon: < Calculator />, link: "/#g" },
   { id: 10, icon: <Office />, link: "/h" },
   { id: 11, icon: <ArrowDown />, link: "/i" },
 ];
@@ -55,6 +55,13 @@ export const UPCOMING_EVENTS = [
 export const LATEST_EVENTS = [
     { id: 1, icon: <Document color="#6c8cf5" />, title: "Invoice #AA-04-19-1890678", description: "New Madieton LLC", value: "$118.00"},
     { id: 2, icon: <Receipt color="#6c8cf5"/>, title: "Client Bernard Stanley", description: "bernard.stanley@gmail.com", value: "$3208.00" },
-    { id: 2, icon: <Users color="#6c8cf5"/>, title: "Meeting with the client", description: "24 Vandervort Springs", value: "29 Oct 2019" },
-    { id: 2, icon: <SalesReceipt  color="#6c8cf5"/>, title: "Invoice #AA-04-19-1890243", description: "Tyriquemouth LLC", value: "$578.00" },
+    { id: 3, icon: <Users color="#6c8cf5"/>, title: "Meeting with the client", description: "24 Vandervort Springs", value: "29 Oct 2019" },
+    { id: 4, icon: <SalesReceipt  color="#6c8cf5"/>, title: "Invoice #AA-04-19-1890243", description: "Tyriquemouth LLC", value: "$578.00" },
+];
+
+export const INCOME_BREAKDOWN_DATA = [
+    { id: 1, title: "Marketing Channels", value: "$22.0k", color: "rgb(94,129,244)"},
+    { id: 2, title: "Offline Channels", value: "$18.6k", color: "#F4B665" },
+    { id: 3, title: "Direct Sales", value: "$8.4k", color: "rgb(138,241,185)" },
+    { id: 4, title: "Other Channels", value: "$15.3k", color: "rgb(255,128,139)" },
 ];
